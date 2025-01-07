@@ -30,21 +30,81 @@
 
 
       
-    <section id="CV">
+    <section id="ART_section">
 
-            <div id="Art">
+            <div class="Art">
                 <div class="text">
                     <h2>Young Nice Artists</h2>
                     <p>Seriez-vous reconnaître chacune de ces femmes ? <br>
                         Sexe admiré au premier plan, mais pourtant intrasequement au second plan de la reconnaissance universelle. La femme est l’objet numéro un de fascination et de désir. Elle est la muse des œuvres les plus célèbres. Dans cette composition, la représentation de ces femmes se brouille dans un ensemble à l’allure pixelisé. Chacune ayant une ethnie différente, cependant, assemblée ici, elles ne font plus qu’une. Toutes sont différentes, et par conséquent pareilles. Elles subissent les mêmes peines, le même harcèlement, les mêmes oppressions….le même sexisme.
                         </p>
                 </div>
-                <img src="" style="width :50%;">
+                <img src="GG.jpeg" style="width :50%;">
 
             </div>
 
-            <div id="Exp">
-               
+            <div class="Art">
+                <img src="GG.jpeg" style="width :50%;">
+                <div class="text">
+                    <p>Cette oeuvre a été conçu sous le  thème “Nous sommes unes” du Young Nice Artists Festival 2023. Elle fait partie des gagnantes du concours qui ont pu être exposé à l’hotel Marriott du 30 mars au 12 mai 2023. </p>
+                </div>
+            </div>
+
+            <div class="illustrations">
+                <h2>Illustrations</h2>
+                <p>Voici quelques illustrations, que j’ai réalisé pour mon plaisir personnel.</p>
+                <div class="images_illu">
+                    <img src="GG.jpeg" style="width :20%;">
+                    <img src="GG.jpeg" style="width :20%;">
+                    <img src="GG.jpeg" style="width :20%;">
+                </div>
+
+            </div>
+
+            <div class="illustrations">
+                <h2>Peintures</h2>
+                <h4>Deux peintures-collages dans le thème de la nature </h4>
+                <p>Dans la paisible campagne un chien tient en laisse deux humains. Est-ce la nature qui nous doméstique ?<br>Le costard gris, 
+                    symbole du travail et 
+                    du capitalisme, est décoré de fleurs, symboles de la nature. Ces dernières poussent malgré 
+                    elles, cela même dans un milieu hostile où peu de place est disponible.</p>
+                <div class="images_illu">
+                    <img src="GG.jpeg" style="width :20%;">
+                    <img src="GG.jpeg" style="width :20%;">
+                </div>
+                <h4>Autres peintures</h4>
+                <p>Quelques autres peintures.</p>
+                <div class="images_illu">
+                    <img src="GG.jpeg" style="width :20%;">
+                    <img src="GG.jpeg" style="width :20%;">
+                    <img src="GG.jpeg" style="width :20%;">
+                </div>
+
+            </div>
+        
+            <div class="Art" style="flex-direction: column";>
+                <div class="digit" style="width: 100%;">
+                <div class="text">
+                    <h2>Peintures Digitales</h2>
+                    <h4>Ces deux peintures digitales sont des critiques du système du consommation.</h4>
+                    <h4>Femme libre ?</h4>
+                    <p>Dans Femme libre ?, l’idéal de beauté contraste avec le corps de la femme au premier plan. Son corps est crispé et fermé dans l’ombre. Devant elle, 
+                        les dogmes d’une vie heureuse, des représentations de ce à quoi elle aurait dû ressembler pour être une femme libre : richesse, couple, et beauté.</p>
+                </div>
+                <img src="GG.jpeg" style="width :50%;">
+                </div>
+
+
+
+                <div class="digit" style="width: 100%;">
+                <img src="GG.jpeg" style="max-width :50%;">
+                <div class="text">
+                    <h4>Dictature Invisible</h4>
+                    <p>Dans Dictature invisible, la foule est déshumanisée. Les visages ne sont pas définis. Écrasant les hommes de leur hauteur, les building symbolisent le pouvoir. 
+                        Ils sont le symbole des multinationales, ces entreprises imposant le modèle à suivre par leur propagande de l’image. </p>
+                </div>
+                </div>
+
             </div>
 
     </section>
@@ -64,12 +124,14 @@
     header {background-image: src('GG.jpeg'); background-size: cover; ;    
     display: flex;
     flex-direction: column;
-    padding: 1% 2% 15% 2%;}
+    padding: 1% 2% 10% 2%;}
    
     #titre{text-align: center;
-            display: flexbox; border: 3px solid #161616; 
+            display: flexbox;
+            border: 3px solid #161616; 
             border-radius: 10px;
-            margin: 10% 20% 10% 20%;
+            margin: 2% 25% 0% 25%;    
+            padding: 7% 10% 7% 10%;
             color: black}
 
     
@@ -82,24 +144,31 @@
             color: rgb(255, 61, 242);
         }
 
-    #CV{background: #161616; color: white; 
+    #ART_section{background: #161616; color: white; 
         border-radius: 25px 25px 0px 0px;
         display : flex; 
         justify-content: center;
         flex-wrap:wrap;
         margin: -15% 0% 0% 0%;}
 
-    #CV div { margin: 1%; 
+    #ART_section div {justify-content: center;
+    display: flex;
+    padding: 3% 0% 3% 0%;
     text-align: justify;
-    margin: 1%;}
+    margin: 2%;}
+
+    .text{flex-direction: column;}
 
     .zone{ width: 100%; padding : 10px 0px 0px 0px}
+    .illustrations{display: flex;
+        flex-direction: column;
+        align-items: center;}
 
-    #Art{width : 100%;
-        padding: 5% 1% 5% 1%;}
+    .images_illu{display: flex;flex-wrap:wrap}
 
-    #competences{width: 100%;
-        padding: 5% 10% 20% 20%;}
+    .Art{width : 100%;
+        padding: 5% 1% 5% 1%;
+        display: flex}
 
     footer{display: flex; flex-direction: column; 
         align-items: center; 
