@@ -62,8 +62,12 @@
                     <p>Les couleurs rouges et oranges rappellent la saison, mais aussi la fête d’Halloween (qui est le thème de la soirée). La typographie du premier prospectus est dégoulinante et tachée de sang. 
                         Le second prospectus  est plus classique (typographie et disposition des éléments simples).</p>
                 </div>
-                <img src="bateleur2.png" style="height: fit-content; max-width: 30%; margin: 10% 1% 1% 1%;">
-                <img src="bateleur1.png" style="height: fit-content; max-width: 30%;margin: 10% 1% 1% 1%;">
+                    
+                <div class="bat">
+                    <img src="bateleur2.png">
+                    <img src="bateleur1.png">
+                </div>
+                
                 </div>
 
 
@@ -84,7 +88,7 @@
                 <h2>Logos</h2>
                 <p>NAGA</p>
                 <div class="images_illu">
-                    <img src="logo3.jpg" style="height: fit-content; margin: 1% 3% 1% 1%; width: 25%;">
+                    <img src="logo3.JPG" style="height: fit-content; margin: 1% 3% 1% 1%; width: 25%;">
                     <img src="logo2.jpg" style="height: fit-content; margin: 1% 3% 1% 1%; width: 25%;">
                     <img src="logo1.jpg" style="height: fit-content; margin: 1% 3% 1% 1%; width: 25%;">
                 </div>
@@ -108,18 +112,18 @@
                 <p>J’ai proposé cinq designs de cartes de visite. Dans chacune d’elles j’ai ajouté  
                     le serpent (symbole de l’association). Parmi ces cartes la première a été choisi. Le dos de la carte contient un QR code vers un Linkedtree, le mail et un numéro de téléphone. </p>
                 <div class="images_illu">
-                    <img src="carte1.jpg" style="margin: 0% 3% 0% 0%; width: 20%;">
-                    <img src="carte2.jpg" style="max-width :20%;">
-                    <img src="carte3.jpg" style="margin: 0% 0% 0% 3%; max-width: 20%;">
-                    <img src="carte4.jpg" style="margin: 0% 3% 0% 0%; width: 20%;">
-                    <img src="carte5.jpg" style="max-width :20%;">
-                    <img src="doscarte.jpg" style="margin: 0% 0% 0% 3%; max-width: 20%;">
+                    <img src="carte1.jpg" >
+                    <img src="carte2.jpg">
+                    <img src="carte3.jpg">
+                    <img src="carte4.jpg">
+                    <img src="carte5.jpg">
+                    <img src="doscarte.jpg">
                 </div>
                 
 
             </div>
 
-            <div class="illustrations">
+            <div class="art">
                 <h2>Design magazines</h2>
                 <h4>Nagazines n°4</h4>
                 <p>Nagazine a une charte graphique punk et rock. Il est majoritairement en noir et rouge et s’inspire des fanzines des années 70. 
@@ -131,6 +135,7 @@
                 <div class="images_illu">
                     <img src="ours1.png" style="margin: 0% 3% 0% 0%; width: 40%;">
                 </div>
+             </div>
                 <h4>Pages de la rubriques Spéciale école de la seconde chance</h4>
                 <p>Pour ces pages, j’ai opté pour un style très scolaire (papier déchiré, et dessins semblants être faits sur du papier). 
                     J’ai choisi cette esthétique notamment car le contenu de cette rubrique est écrit par les jeunes de l’école de la seconde chance. Dans ces articles, les jeunes partagent leur manière de parler, leur impression sur des clichés à la vie dure et leurs anecdotes.</p>
@@ -139,19 +144,19 @@
                     <img src="jeune2.png" style="max-width :20%;">
                     <img src="jeune3.png" style="margin: 0% 0% 0% 3%; max-width: 20%;">
                 </div>
-
+           <div class="art">
                 <h4>Nagazines n°5</h4>
+                 <p>Pour ce magazine j’ai opté pour un visuel similaire au précédent. 
+                    Les fonds sont colorés, et plein de radiance. L’esthétique du fanzine est conservée, mais 
+                    revisitée à ma sauce pour donner à ce style un nouveau souffle plus moderne.</p>
+        
                 <div class="images_illu">
                    <img src="ours.png" style="margin: 0% 3% 0% 0%; width: 20%;">
                     <img src="design2.png" style="max-width :20%;">
                     <img src="design1.png" style="margin: 0% 0% 0% 3%; max-width: 20%;">
                 </div>
-                <p>Pour ce magazine j’ai opté pour un visuel similaire au précédent. 
-                    Les fonds sont colorés, et plein de radiance. L’esthétique du fanzine est conservée, mais 
-                    revisitée à ma sauce pour donner à ce style un nouveau souffle plus moderne.</p>
-
-            </div>
-        
+           </div>
+               
     </section>
 
     <footer>
@@ -209,11 +214,15 @@
         flex-direction: column;
         align-items: center;}
 
-    .images_illu{display: flex;flex-wrap:wrap}
+    .images_illu{display: flex; flex-wrap:wrap; width:100%}
+
+    .images_illu img {height: fit-content; margin: 1% 1% 1% 1%; max-width: 25%;}
 
     .Art{width : 100%;
         padding: 5% 1% 5% 1%;
         display: flex}
+    .bat{display:flex}
+    .bat img {height: fit-content; max-width: 30%; margin: 10% 1% 1% 1%;}
 
     footer{display: flex; flex-direction: column; 
         align-items: center; 
@@ -224,6 +233,8 @@
         #titre{margin: 2% 15% 0% 15%;
             padding: 15% 2% 15% 2%;}
         a {padding: 2%; min-width: auto;}
+        .images_illu img{width:40%}
+        .bat{flex-direction:column}
          }
 
 </style>
