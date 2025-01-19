@@ -62,14 +62,17 @@
                      Lors de la fête du Petit Prince, Nous avons géré un stand de dessin pour les jeunes de quartier. Le but étant de pousser les enfants à dessiner de manière plus approfondie que ce qu’ils feraient seuls en temps normal, tout en leur faisant découvrir l’ouvrage de Saint-Exupéry. L’événement s’est fini par un goûter et une danse collective.</p>
         
                 </div>
-                <img src="event1.jpg" style="max-width :30%; margin: 1%">
-                <img src="event2.jpg" style="max-width :30%; margin: 1%">
+
+                <div class="bat"> 
+                    <img src="event1.jpg" >
+                    <img src="event2.jpg" >
+                </div>
+                    
                 </div>
 
 
 
                 <div class="digit" style="width: 100%;">
-                <img src="soiree.jpg" class="Lise" >
                     <div class="soir">
                          <img src="soiree2.jpg" >
                          <img src="soiree3.jpg" >
@@ -88,7 +91,7 @@
 
             <section class="illustrations">
                 <h2>Couverture d’événéments</h2>
-                <p style= "margin: 5% 0% ">Naga participe a beaucoup d’événement du social. L’association a notamment accompagné le concours de l’UFM (Union des Femmes Monégasques) dans leur jeu concours sur l’histoire des femmes importantes de Monaco.</p>
+                <p style= "text-align: justify; margin: 0% 5% 5%;">Naga participe a beaucoup d’événement du social. L’association a notamment accompagné le concours de l’UFM (Union des Femmes Monégasques) dans leur jeu concours sur l’histoire des femmes importantes de Monaco.</p>
                
                 <h4>Temps-danse <br>"(par Antipode)</h4>
                 <p>h jhsdbfjdsbjdsdskjncjdsvjsbvjdfvndfbvn</p>
@@ -99,12 +102,9 @@
                     <img src="dance4.jpg" >
                      <img src="dance5.jpg" >
                      <img src="dance6.jpg">
-                </div>
-                
-                <div class="images_illu">
-                    <img src="dance7.jpg" style="margin: 0% 3% 0% 0%; width: 40%;">
-                    <img src="dance8.jpg" style="max-width :40%;">
-                    <img src="dance9.jpg" style="margin: 0% 0% 0% 3%; max-width: 40%;">
+                    <img src="dance7.jpg" >
+                    <img src="dance8.jpg">
+                    <img src="dance9.jpg">
                 </div>
 
             </section>
@@ -127,8 +127,9 @@
 
 
          <section class="illustrations">
-                <h4>Jeu de piste avec l'ADFM</h4>
-                <p style="margin: 0% 5%; text-align: justify;">L'association des femmes monegasque à organisé un jeu de piste dans toute la ville de Monaco. L'objectif : permettre à chacun de se rendre compte de l'importance des femmes dans l'histoire de la principauté. J'ai particpé à l'encadrement de cet événement, et l'ai aussi présenté à la chaine d'information monegasque. A la clé de ce garnd jeu, une bonne balade, des infos historique et un Iphone 16 pour le plus performant des participants.es.</p>
+                <h4>Jeu de piste avec l'UFM</h4>
+                <p style="margin: 0% 5%; text-align: justify;">L'union des femmes monegasque à organisé un jeu de piste dans toute la ville de Monaco. L'objectif : permettre à chacun de se rendre compte de l'importance des femmes dans l'histoire de la principauté. J'ai particpé à l'encadrement de cet événement, et l'ai aussi présenté à la chaine d'information monegasque. A la clé de ce garnd jeu, une bonne balade, des infos historique et un Iphone 16 pour le plus performant des participants.es. <br>
+                https://www.ufm.mc/</p>
                 <div class="images_illu">
                     <img src="monaco.jpg" style="margin: 0% 3% 0% 0%; width: 40%;">
                     <img src="monaco2.jpg" style="max-width :40%;">
@@ -137,7 +138,7 @@
                 <h4>Animation de jeu en maison de retraite</h4>
                 <p style="margin: 0% 5%; text-align: justify;" >Afin d'égailler les journée de nos retraités niçois, Naga organise des ateliers d'art dans les maisons de retraite. Lors de ses excursions, les dialogues étaient riches en anecdotes et histoires de leur vies toutes aussi passionantes les unes que les autres.</p>
              
-             *<div class="images_illu">
+             <div class="images_illu">
                     <img src="retraite.jpg" style="margin: 0% 3% 0% 0%; width: 40%;">
                     <img src="retraite2.jpg" style="max-width :40%;">
                 </div>
@@ -195,11 +196,15 @@
     margin: 2%;}
 
     .text{flex-direction: column;}
+    
 
     .zone{ width: 100%; padding : 10px 0px 0px 0px}
     .illustrations{display: flex;
         flex-direction: column;
         align-items: center;}
+
+     .bat{display:flex}
+    .bat img {height: fit-content; max-width: 50%; margin: 10% 1% 1% 1%;}
 
     .images_illu{display: flex; flex-wrap:wrap}
     .images_illu img {height: fit-content; margin: 2%; max-width: 40%;}
@@ -210,13 +215,8 @@
     
     .digit img {max-width :20% ; height: fit-content}
 
-    .Lise{ margin-left: -60%;
-    position: absolute;
-    display: block;
-    max-width: 35%;}
-
     .soir{diplay:flex; flex-direction: column}
-    .soir img{max-width:100%}
+    .soir img {max-width:100%; padding: 2% 0%}
 
     footer{display: flex; flex-direction: column; 
         align-items: center; 
@@ -228,6 +228,7 @@
         #titre{margin: 2% 15% 0% 15%;
             padding: 15% 2% 15% 2%;}
         a {padding: 2%; min-width: auto;}
-        .soir{padding-top: 48%; diplay: flex; flex-direction: column;}
+         .bat{flex-direction:column; max-width: 50%;}
+         .bat img{ max-width: 100%;}
          }
 </style>
