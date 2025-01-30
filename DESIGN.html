@@ -46,6 +46,7 @@
             </div>
 
             <section class="Art">
+                <div class="digit" style="width: 100%;">
                 <div class="text">
                     <h2>Montages photos</h2>
                     <p>Cette oeuvre a été conçu sous le  thème “Nous sommes unes” du Young Nice Artists Festival 2023. Elle fait partie des gagnantes du concours qui ont pu être exposé à l’hotel Marriott du 30 mars au 12 mai 2023. </p>
@@ -54,11 +55,13 @@
                   <div class="bat">
                     <img src="montage1.png">
                     <img src="montage2.png">
+                 </div> 
                 </div>
                 
             </section>
 
-         <section class="Art">
+         <section class="Art" style="padding-top: 0;">
+             <div class="digit" style="width: 100%;">
                   <div class="bat">
                     <img src="montage3.png">
                     <img src="montage4.png">
@@ -67,6 +70,7 @@
                 <div class="text">
                     <p>Dans un but comique, j’ai aussi réalisé des montages grossier. Un art qui rassemble tout ce qui est kytch, hasbeen, aux découpes grossières, et couleurs agressives. </p>
                 </div>   
+                </div> 
           </section>
 
 
@@ -204,9 +208,9 @@
             color: rgb(255, 61, 242);
         }
 
-    #ART_section{background: #161616; color: white; 
+    #ART_section { display: flex; 
+        background-color: white; 
         border-radius: 25px 25px 0px 0px;
-        display : flex; 
         justify-content: center;
         flex-wrap:wrap;
         margin: -15% 0% 0% 0%;}
@@ -216,10 +220,11 @@
     padding: 3% 0% 3% 0%;
     text-align: justify;
     margin: 2%;}
+    
 
     .text{flex-direction: column;}
 
-    .zone{ width: 100%; padding : 10px 0px 0px 0px}
+    .zone{ width: 100%; padding: 10px 0px 0px 0px}
     .illustrations{display: flex;
         flex-direction: column;
         align-items: center;}
@@ -228,9 +233,10 @@
 
     .images_illu img {height: fit-content; margin: 1% 1% 1% 1%; max-width: 25%;}
 
-    .Art{width : 100%;
+    .art{  display: flex; width: 100%; 
         padding: 5% 1% 5% 1%;
-        display: flex}
+       }
+    
     .bat{display:flex}
     .bat img {height: fit-content; max-width: 50%; margin: 10% 1% 1% 1%;}
 
@@ -246,8 +252,6 @@
         .images_illu img{width:50%}
         .bat{flex-direction:column; max-width: 50%;}
          .bat img{ max-width: 100%;}
-         .ours1 {height: fit-content;
-          max-width: 40%;}
          .Art{flex-direction:column}
          }
         
