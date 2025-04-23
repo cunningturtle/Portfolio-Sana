@@ -1,196 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>Portfolio Sana Ouichouani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mon Site Internet</title>
 </head>
-
 <body>
     <header>
-        <section style ="display: flex;
-        justify-content: space-evenly;">
-            <p>Tel : 06 51 07 42 23</p>
-            <p>Mail : Ouichsana@gmail.com</p>
-        </section>
+		<input id="burger" type="checkbox" />
 
-        <section id="titre">
-            <h1>Sana Ouichouani</h1>
-        </section>
-        <section id ="menu">
-            <a href="Crea.html"><h3>Mes créations artistiques</h3></a>
-            <a href="3D.html"><h3>3D</h3></a>
-            <a href="DESIGN.html"><h3>Design</h3></a>
-            <a href="event.html"><h3>Evénementiel</h3></a>
-        </section>
+<label for="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<nav>    
+  <ul>
+	<li><a href="#">CV</a></li>
+    <li><a href="#">3D</a></li>
+	<li><a href="#">Jeux</a></li>
+    <li><a href="#">Design</a></li>
+    <li><a href="#">Evénementiel</a></li>
+  </ul>  
+</nav>
     </header>
+    <main>
+		<div class="titre">
+			<h1>Portfolio</h1>
+			<h2>Sana OUICHOUANI</h2>
+		</div>
 
 
-
-      
-    <section id="CV">
-
-            <div class="Exp" style="padding-right: 2%; border-right: solid;">
-                <h2>Formations</h2>
-
-                    <div class="zone">
-                    <h3>Université Côte d'azur — Master management jeu vidéo et industries créatives</h3>
-                    <p>De 2024 - 2025, Campus George Milies</p>
-                    <p>Management de projets<br>
-                        Création 3D<br>
-                        Game Design<br>
-                        Level Design<br>
-                        Conception de jeux vidéos</p>
+        <div class="gallery">
+            <p style="padding-bottom: 5%;">Quelques une de mes créations :</p>
+            <div class="carousel-container">
+                <!-- Tabs -->
+                <div class="tabs" id="tabs"></div>
+            
+                <!-- Carousel Viewport -->
+                <div class="carousel-wrapper">
+                    <button class="nav-button up" onclick="scrollToCard(activeIndex - 1)">&#8593;</button>
+                    <button class="nav-button down" onclick="scrollToCard(activeIndex + 1)">&#8595;</button>
+            
+                    <div class="carousel-track" id="track">
+                        <!-- Cards will be inserted dynamically -->
                     </div>
-
-                    <div class="zone">
-                    <h3>Université Côte d'azur — Licence info-communication</h3>
-                    <p>De 2021-2024, Campus Carlone</p>
-                    <p>Ecriture de scénarios<br>
-                        Conception de publicités<br>
-                        Montages vidéos<br>
-                        Rédaction d'articles de presse</p>
-                    </div>
-
-                    <div class="zone">
-                        <h3>Villa Thiole — Cours d’art</h3>
-                        <p>De 2018 à 2020, 32 Av. Malaussena</p>
-                        <p>Conception de créations originales à partir de techniques différentes ( nature morte, construction en carton et papier, acrylique et encre )<br>
-                            Productions d’œuvres variées ( cubisme, nature morte, surréalisme, affiches... )</p>
-                        </div>
-
-                    <div class="zone">
-                    <h3>Don Bosco — Baccalauréat ( Mention bien )</h3>
-                    <p>2021, 40 Pl. Don Bosco, 06046 Nice</p>
-                    <p>Spécialités mathématiques, sciences économiques et sociales, physique chimie, option droit et théâtre</p>
-                    </div>
+                </div>
             </div>
-
-            <div class="Exp">
-                <h2>Experiences professionnelles</h2>
-                
-                <div class="zone">
-                    <h3>Naga, association participative et culturelle — Directrice artistique, rédactrice, Monteuse vidéos</h3>
-                    <p>Du 1 juillet au 29 février 2024,  adresse 06000 NICE</p>
-                    <p>Design de magazines ( comme le Nagazine étudiant N°1, N°2, N°3 et le Nagazine N°4 et N°5 )<br>
-                        Direction d’une équipe PAO<br>
-                        Création et mise à jour du site internet<br>
-                        Couverture et organisation d’événements culturelles et festifs (Fête du Soleil, soirées étudiantes au Bateleur et au Akator)</p>
-                    </div>
-
-                
-                    <div class="zone">
-                    <h3>My School Montessori et Mairie de Nice — Animatrice d’enfants</h3>
-                    <p>Du 6 au 31 Juillet 2020 à My School Montessori, 19 chemin des Travails, 
-                        06800 Cagnes-Sur-Mer<br> 
-                        De 2020 à 2021, Ecoles Terra Amata, Jean-Macé, Nikaia avec la Marie de Nice</p>
-                    <p>Animation d'enfants de 3 à 9 ans en pleine air et en intérieur<br>
-                        Création d'activités manuelles et physiques d'intérieur<br>
-                        Décorations des centres, selon les saisons et thèmes du moment<br>
-                        Réactivité et adaptabilité en fonction des situations et des publics<br>
-                        Elaboration d'activités afin de sensibiliser à l'environnement<br>
-                        Pédagogie positive</p>
-                    </div>
-
-                    <div class="zone">
-                    <h3>Nice Actu— Illustratrice</h3>
-                    <p>De 2021-2024, Campus Carlone</p>
-                    <p>Ecriture de scénarios<br>
-                        Conception de publicités<br>
-                        Montages vidéos<br>
-                        Rédaction d'articles de presse</p>
-                    </div>
-
-                    <div class="zone">
-                        <h3>France Bleu Azur — Stage</h3>
-                        <p>Février 2017,, 2 Pl. Grimaldi (06000 Nice)  </p>
-                        <p>Rédaction de chroniques<br>
-                            Réalisation de PAD ( montage sonore prêt à être diffusé )<br>
-                            Observation des tâches de la régie son</p>
-                        </div>
-            </div>
-
-            <div class="Exp">
-                <h2>Compétences</h2>
-                <p>Maîtrise des PAO ( comme Photoshop, InDesign, Fresco, Mental Canvas )</p>
-                <p>Animation de courts dessins animés ( Callipeg )</p>
-                <p>Programmation de sites web</p>
-                <p>Maitrise du logiciel de 3D Blender</p>
-                <p>Pratiques scéniques (10 ans d'expérience dans le théâtre)</p>
-            </div>
-        
-            <div class="Exp" style ="background: linear-gradient(70deg, #010151, pink);
-    border-radius: 20px; padding: 2%; max-height: 150px; margin: 10% 1%;">
-                <h2>Format PDF</h2>
-                <a href="CV.html" style="padding: 2%;" >Cliquez ici pour y accèder</a>
-            </div>
-    </section>
-
-    <footer>
-        <p>2025<br>
-        Toutes les photos, illustrations,  peintures, et code html de ce portfolio web sont mes créations</p>
-    </footer>
-
-</body>
-<style>
-
-     body {font-family: Arial, sans-serif; margin: 0px}
-    
-    
-    
-    header {background: radial-gradient(#ffe8b1, white ,#ffcff5);    
-    display: flex;
-    flex-direction: column;
-    padding: 1% 2% 15% 2%; }
-   
-    #titre{text-align: center;
-            font-size: 40px;
-            display: flexbox; border: 3px solid #161616; 
-            border-radius: 10px;
-            margin:10% 20% 0% 20%;
-           padding: 2%;
-            color: black}
-
-    
-
-    #menu {display: flex; justify-content: center; margin: 2% 10% 5% 10%;}
-
-    a{color: white; background : #161616; border-radius : 10px; text-decoration: none; padding: 1%; margin: 1%; min-width: 15%;
-    text-align: center;}
-    a :hover{
-            color: pink;
+            
+            <script src="https://cdn.tailwindcss.com"></script>
+        </div>
+    </main>
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('active');
         }
+    </script>
+</body>
+</html>
+<style>
+	
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    #CV{background: #161616; color: white; 
-        border-radius: 25px 25px 0px 0px;
-        display : flex;
-        justify-content: center;
-        flex-wrap:wrap;
-        margin: -15% 0% 0% 0%;}
+/*menu burger */
+body {font-family: Arial, sans-serif;
+  background: rgb(36, 36, 36);
+ 
+  }
+    input + label {
+      position: fixed;
+      top: 40px;
+      right: 40px;
+      height: 20px;
+      width: 15px; 
+      z-index: 5;
+      span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        margin-top: -1px;
+        left: 0;
+        display: block;
+        background: rgb(36, 36, 36);
+        transition: .5s;
+      }
+      span:first-child {
+        top: 3px; 
+      }
+      span:last-child {
+        top: 16px; 
+      }      
+    }
+    label:hover {
+      cursor: pointer;
+    }
+    input:checked + label { 
+      span {
+        opacity: 0;
+        top: 50%;
+      }
+      span:first-child {
+        opacity: 1;
+        transform: rotate(405deg);
+      }
+      span:last-child {
+        opacity: 1;
+        transform: rotate(-405deg);
+      }
+    }
+    input ~ nav {
+      background: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      z-index: 3;
+      transition: .5s;
+      transition-delay: .5s;
+      overflow: hidden;
+      > ul {
+        text-align: center;
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        right: 20%;
+        > li {
+          opacity: 0;
+          transition: .5s;
+          transition-delay: 0s;
+          > a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgb(36, 36, 36);
+            font-weight: 700;
+            font-family: sans-serif;
+            display: block;
+            padding: 30px;
+          } }}}
 
-    #CV div { margin: 1%; 
-    margin: 1%;}
 
-    .zone{ width: 100%; padding : 10px 0px 0px 0px}
 
-    .Exp{width : 45%;
-        padding: 5% 1% 5% 1%;}
+/*titre*/
+.titre {display: flex; flex-direction: column; align-items: center;padding-bottom: 20%;}
 
-    #competences{width: 100%;
-        padding: 5% 10% 10% 20%}
+main {padding-top: 20%;}
+h1 {font-size :60px; }
+/*galerie de photos */
+    input:checked ~ nav { 
+      height: 100%;
+      transition-delay: 0s;
+      > ul {
+        > li {
+          opacity: 1;
+          transition-delay: .5s;
+        }
+      }
+    } 
 
-    footer{text-align: center;
-        display: flex; flex-direction: column; 
-        background: #161616; 
-        color: white;}
+.gallery {
+    margin-top: 20px;
+}
 
-     @media only screen and (max-width: 700px) {    
-        #titre{margin: 2% 15% 0% 15%;
-            font-size: 170%;
-            padding: 15% 2% 15% 2%;}
-        a {padding: 2%;
-           font-size: 80%;
-           min-width: auto;}
-         }
+.gallery img {
+    width: calc(25% - 2px);
+    margin: 1px;
+    border: 1px solid #ccc;
+}
 
+@media (max-width: 600px) {
+    .gallery img {
+        width: calc(50% - 2px);
+    }
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 600px) {
+    .gallery img {
+        width: calc(50% - 2px);
+    }
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+	font-family: "Roboto", sans-serif;
+	background: #121212;
+	color: white;
+	margin: 0;
+	padding: 2rem;
+}
+
+.carousel-container {
+	max-width: 900px;
+	margin: auto;
+	position: relative;
+}
+
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.tab {
+	background: #333;
+	border: none;
+	border-radius: 20px;
+	padding: 0.5rem 1rem;
+	color: white;
+	cursor: pointer;
+	font-weight: 500;
+	transition:  0.3s ease;
+}
+
+.tab.active {
+	background: #fff;
+	color: #000;
+}
+
+.carousel-wrapper {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+}
+
+.carousel-track {
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.5s ease-in-out;
+}
+
+.card {
+	flex: 0 0 100%;
+	height: 400px;
+	padding: 1rem 0;
+}
+
+.card-content {
+	border-radius: 16px;
+	height: 368px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+}
+
+.nav-button {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	color: white;
+	font-size: 1.5rem;
+	padding: 0.5rem 1rem;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s;
+	z-index: 10;
+}
+
+.nav-button:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-button.up {
+	top: 0.5rem;
+}
+
+.nav-button.down {
+	bottom: 0.5rem;
+}
 </style>
+
+<script> 
+function toggleMenu() {
+	const navbar = document.getElementById('navbar');
+	navbar.classList.toggle('active');
+}
+
+
+    const colors = [
+	"#FF0000",
+	"#FF7F00",
+	"#FFFF00",
+	"#00FF00",
+	"#0000FF",
+	"#4B0082",
+	"#9400D3"
+];
+const track = document.getElementById("track");
+const tabs = document.getElementById("tabs");
+let activeIndex = 0;
+
+function createCarousel() {
+	colors.forEach((color, index) => {
+		const card = document.createElement("div");
+		card.className = "card";
+		//card.innerHTML = `<div class="card-content" style="background:${color}">Card ${index + 1}</div>`;
+		card.innerHTML = `<div class="card-content" style="background: url('https://picsum.photos/800/600?random=${index}') center/cover no-repeat;"></div>`;
+		track.appendChild(card);
+
+		const tab = document.createElement("button");
+		tab.className = "tab";
+		tab.textContent = `${index + 1}`;
+		tab.onclick = () => scrollToCard(index);
+		tabs.appendChild(tab);
+	});
+
+	updateTabs();
+}
+
+function scrollToCard(index) {
+	const count = colors.length;
+	activeIndex = (index + count) % count;
+	track.style.transform = `translateY(-${activeIndex * 400}px)`;
+	updateTabs();
+}
+
+function updateTabs() {
+	[...tabs.children].forEach((tab, i) => {
+		tab.classList.toggle("active", i === activeIndex);
+	});
+}
+
+createCarousel();
+
+</script>
