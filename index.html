@@ -58,6 +58,7 @@
             const navbar = document.getElementById('navbar');
             navbar.classList.toggle('active');
         }
+	
     </script>
 </body>
 </html>
@@ -150,7 +151,7 @@ body {font-family: Arial, sans-serif;
 
 
 /*titre*/
-.titre {display: flex; flex-direction: column; align-items: center;padding-bottom: 20%;}
+.titre {display: flex; flex-direction: column; align-items: center;padding-bottom: 10%;}
 
 main {padding-top: 20%;}
 h1 {font-size :60px; }
@@ -296,52 +297,48 @@ function toggleMenu() {
 	const navbar = document.getElementById('navbar');
 	navbar.classList.toggle('active');
 }
+ // Ici images du carousel
+ const images = [
+            'https://github.com/cunningturtle/Portfolio-Sana/blob/main/peinture3.jpg?raw=true', 
+            'https://github.com/cunningturtle/Portfolio-Sana/blob/main/peinture.png?raw=true',  
+            'https://github.com/cunningturtle/Portfolio-Sana/blob/main/peinturefille.jpg?raw=true',
+            'https://github.com/cunningturtle/Portfolio-Sana/blob/main/peinture4.jpg?raw=true'  
+        ];
 
+        const track = document.getElementById("track");
+        const tabs = document.getElementById("tabs");
+        let activeIndex = 0;
 
-    const colors = [
-	"#FF0000",
-	"#FF7F00",
-	"#FFFF00",
-	"#00FF00",
-	"#0000FF",
-	"#4B0082",
-	"#9400D3"
-];
-const track = document.getElementById("track");
-const tabs = document.getElementById("tabs");
-let activeIndex = 0;
+        function createCarousel() {
+            images.forEach((image, index) => {
+                const card = document.createElement("div");
+                card.className = "card";
+                card.innerHTML = `<div class="card-content" style="background: url('${image}') center/cover no-repeat;"></div>`;
+                track.appendChild(card);
 
-function createCarousel() {
-	colors.forEach((color, index) => {
-		const card = document.createElement("div");
-		card.className = "card";
-		//card.innerHTML = `<div class="card-content" style="background:${color}">Card ${index + 1}</div>`;
-		card.innerHTML = `<div class="card-content" style="background: url('https://picsum.photos/800/600?random=${index}') center/cover no-repeat;"></div>`;
-		track.appendChild(card);
+                const tab = document.createElement("button");
+                tab.className = "tab";
+                tab.textContent = `${index + 1}`;
+                tab.onclick = () => scrollToCard(index);
+                tabs.appendChild(tab);
+            });
 
-		const tab = document.createElement("button");
-		tab.className = "tab";
-		tab.textContent = `${index + 1}`;
-		tab.onclick = () => scrollToCard(index);
-		tabs.appendChild(tab);
-	});
+            updateTabs();
+        }
 
-	updateTabs();
-}
+        function scrollToCard(index) {
+            const count = images.length;
+            activeIndex = (index + count) % count;
+            track.style.transform = `translateY(-${activeIndex * 400}px)`;
+            updateTabs();
+        }
 
-function scrollToCard(index) {
-	const count = colors.length;
-	activeIndex = (index + count) % count;
-	track.style.transform = `translateY(-${activeIndex * 400}px)`;
-	updateTabs();
-}
+        function updateTabs() {
+            [...tabs.children].forEach((tab, i) => {
+                tab.classList.toggle("active", i === activeIndex);
+            });
+        }
 
-function updateTabs() {
-	[...tabs.children].forEach((tab, i) => {
-		tab.classList.toggle("active", i === activeIndex);
-	});
-}
-
-createCarousel();
+        createCarousel();
 
 </script>
