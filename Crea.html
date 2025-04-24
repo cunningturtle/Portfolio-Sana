@@ -1,188 +1,693 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>Portfolio Sana Ouichouani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sana Ouichouani</title>
 </head>
-
 <body>
     <header>
-        <section style ="display: flex;
-        justify-content: space-evenly;">
-            <p>Tel : 06 51 07 42 23</p>
-            <p>Mail : Ouichsana@gmail.com</p>
-        </section>
+		<input id="burger" type="checkbox" />
 
-        <section id="titre">
-            <h1>Mes créations artistiques</h1>
-            <p>J’ai toujours été passionnée par l’art. Créer me permet d’extérioriser des concepts d’une manière plus complète et direct qu’avec des mots.</p>
-        </section>
-        <section id ="menu">
-            <a href="index.html"><h3>CV</h3></a>
-            <a href="3D.html"><h3>3D</h3></a>
-            <a href="DESIGN.html"><h3>Design</h3></a>
-            <a href="event.html"><h3>Evénementiel</h3></a>
-        </section>
+<label for="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<nav>    
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+	  <li><a href="CV.html">CV</a></li>
+	  <li><a href="Jeux.html">Jeux</a></li>
+    <li><a href="DESIGN.html">Design</a></li>
+    <li><a href="events.html">Evénementiel</a></li>
+  </ul>  
+</nav>
     </header>
+    <main>
+		<div class="titre">
+			<h1>Mes créations artistiques</h1>
+			<h2>J’ai toujours été passionnée par l’art. Créer me permet d’extérioriser des concepts d’une manière plus complète et direct qu’avec des mots.</h2>
+		</div>
 
 
-
-      
-    <section id="ART_section">
-
-            <div class="Art">
-                <div class="text">
-                    <h2>Young Nice Artists</h2>
-                    <p>Seriez-vous reconnaître chacune de ces femmes ? <br>
-                        Sexe admiré au premier plan, mais pourtant intrasequement au second plan de la reconnaissance universelle. La femme est l’objet numéro un de fascination et de désir. Elle est la muse des œuvres les plus célèbres. Dans cette composition, la représentation de ces femmes se brouille dans un ensemble à l’allure pixelisé. Chacune ayant une ethnie différente, cependant, assemblée ici, elles ne font plus qu’une. Toutes sont différentes, et par conséquent pareilles. Elles subissent les mêmes peines, le même harcèlement, les mêmes oppressions….le même sexisme.
-                        </p>
+        <div class="gallery">
+			<h2>Young Nice Artist</h2>
+            <p style="padding-bottom: 5%;">Seriez-vous reconnaître chacune de ces femmes ?<br> Sexe admiré au premier plan, mais pourtant intrasequement au second plan de la reconnaissance universelle. La femme est l’objet numéro un de fascination et de désir. Elle est la muse des œuvres les plus célèbres. Dans cette composition, la représentation de ces femmes se brouille dans un ensemble à l’allure pixelisé. Chacune ayant une ethnie différente, cependant, assemblée ici, elles ne font plus qu’une. Toutes sont différentes, et par conséquent pareilles. Elles subissent les mêmes peines, le même harcèlement, les mêmes oppressions….le même sexisme.
+			</p>
+            <div class="carousel-container">
+                <!-- Tabs -->
+                <div class="tabs" id="tabs"></div>
+            
+                <!-- Carousel Viewport -->
+                <div class="carousel-wrapper">
+                    <button class="nav-button up" onclick="scrollToCard(activeIndex - 1)">&#8593;</button>
+                    <button class="nav-button down" onclick="scrollToCard(activeIndex + 1)">&#8595;</button>
+            
+                    <div class="carousel-track" id="track">
+                        <!-- Cards will be inserted dynamically -->
+                    </div>
                 </div>
-                <img src="youngart1.png" style="margin-top: 10%;
-                    height: fit-content;
-                    width: 50%;">
-
             </div>
-
-            <div class="Art">
-                <img src="youngartist2.png" style="width :50%;">
-                <div class="text">
-                    <p>Cette oeuvre a été conçu sous le  thème “Nous sommes unes” du Young Nice Artists Festival 2023. Elle fait partie des gagnantes du concours qui ont pu être exposé à l’hotel Marriott du 30 mars au 12 mai 2023. </p>
-                </div>
-            </div>
-
-            <div class="illustrations">
-                <h2>Illustrations</h2>
-                <p>Voici quelques illustrations, que j’ai réalisé pour mon plaisir personnel.</p>
-                <div class="images_illu">
-                    <img src="tigre.png" style="margin: 0% 3% 0% 0%; width: 30%;">
-                    <img src="illu.png" style="max-width :40%;">
-                    <img src="" style="margin: 0% 0% 0% 3%; max-width: 40%;">
-                </div>
-
-            </div>
-
-            <div class="illustrations">
-                <h2>Peintures</h2>
-                <h4>Deux peintures-collages dans le thème de la nature </h4>
-                <p>Dans la paisible campagne un chien tient en laisse deux humains. Est-ce la nature qui nous doméstique ?<br>Le costard gris, 
-                    symbole du travail et 
-                    du capitalisme, est décoré de fleurs, symboles de la nature. Ces dernières poussent malgré 
-                    elles, cela même dans un milieu hostile où peu de place est disponible.</p>
-                <div class="images_illu">
-                    <img src="peinture.png" style="margin: 0% 3% 0% 0%; width: 40%;">
-                    <img src="peinture1.png" style="max-width :20%;">
-                </div>
-                <h4>Autres peintures</h4>
-                <p>Quelques autres peintures.</p>
-                <div class="images_illu">
-                    <img src="GG.jpeg" style="margin: 0% 3% 0% 0%; width: 40%;">
-                    <img src="GG.jpeg" style="max-width :40%;">
-                    <img src="GG.jpeg" style="margin: 0% 0% 0% 3%; max-width: 40%;">
-                </div>
-
-            </div>
-        
-            <div class="Art" style="flex-direction: column";>
-                    <h2 style="text-align: center;">Peintures Digitales</h2>
-                    <h4 style="text-align: center;">Ces deux peintures digitales sont des critiques du système du consommation.</h4>
-                
-                <div class="digit" style="width: 100%;">
-                     <img src="peinture3.jpg" style="margin-top: 10%;
-                               max-width: 50%;
-                               height: fit-content;">
-                      <div class="text">
-                            <h4>Dictature Invisible</h4>
-                            <p>Dans Dictature invisible, la foule est déshumanisée. Les visages ne sont pas définis. Écrasant les hommes de leur hauteur, les building symbolisent le pouvoir. 
-                             Ils sont le symbole des multinationales, ces entreprises imposant le modèle à suivre par leur propagande de l’image. </p>
-                      </div>
-                </div>
-                
-                 <div class="digit" style="width: 100%;">
-                             <img src="peinture4.jpg" style="margin-top: 10%;
-                               max-width: 50%;
-                               height: fit-content;">
-                  <div class="text">
-                        <h4>Femme libre ?</h4>
-                        <p>Dans Femme libre ?, l’idéal de beauté contraste avec le corps de la femme au premier plan. Son corps est crispé et fermé dans l’ombre. Devant elle, 
-                        les dogmes d’une vie heureuse, des représentations de ce à quoi elle aurait dû ressembler pour être une femme libre : richesse, couple, et beauté.</p>
-                  </div>
-                </div>
-
-            </div>
-
-    </section>
-
-    <footer>
-        <p>2025</p>
-        <p>Toutes les photos, illustrations,  peintures, et code html de ce portfolio web sont mes créations</p>
-    </footer>
-
-</body>
-<style>
-
-     body {font-family: Arial, sans-serif; margin: 0px}
-    
-    
-    
-    header {background-image: src('GG.jpeg'); background-size: cover; ;    
-    display: flex;
-    flex-direction: column;
-    padding: 1% 2% 10% 2%;}
-   
-    #titre{text-align: center;
-            display: flexbox;
-            border: 3px solid #161616; 
-            border-radius: 10px;
-            margin: 2% 25% 0% 25%;    
-            padding: 7% 10% 7% 10%;
-            color: black}
-
-    
-
-    #menu {display: flex; justify-content: center;  margin: 2% 10% 10% 10%;}
-
-    a{color: white; background : #161616; border-radius : 10px; text-decoration: none; padding: 1%; margin: 1%; min-width: 15%;
-    text-align: center;}
-    a :hover{
-            color: rgb(255, 61, 242);
+            
+            <script src="https://cdn.tailwindcss.com"></script>
+        </div>
+    </main>
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('active');
         }
+	
+    </script>
 
-    #ART_section{background: #161616; color: white; 
-        border-radius: 25px 25px 0px 0px;
-        display : flex; 
-        justify-content: center;
-        flex-wrap:wrap;
-        margin: -15% 0% 0% 0%;}
+<!--autre gallery -->
+<h2 style="padding-top: 10%;">Mes créations artistiques</h2>
+<p style=" padding-bottom: 5%">Vous trouverez ici toutes sortes de créations différentes, que cela soit : des illustrations, des peintures, des brouillons, ou encore des modelisations 3D.</p>
 
-    #ART_section div {justify-content: center;
-    display: flex;
-    text-align: justify;
-    margin: 2%;}
+<section class="gallery2">
+  <article class='gallery'>
+    <a class='gallery-link' href='https://github.com/cunningturtle/Portfolio-Sana/blob/main/peinture3.jpg?raw=true'>
+      <figure class='gallery-image'>
+        <img height='1400' src='https://github.com/cunningturtle/Portfolio-Sana/blob/main/peinture3.jpg?raw=true' width='1000'>
+        <figcaption><h2>Dictature Invisible</h2><p>Dans Dictature invisible, la foule est déshumanisée. Les visages ne sont pas définis. Écrasant les hommes de leur hauteur, les building symbolisent le pouvoir. 
+          Ils sont le symbole des multinationales, ces entreprises imposant le modèle à suivre par leur propagande de l’image.</p></figcaption>
+      </figure>
+    </a>
+    
+   
+    <a class='gallery-link' href='https://github.com/cunningturtle/Portfolio-Sana/blob/main/sketch3.JPEG?raw=true'>
+      <figure class='gallery-image'>
+        <img height='1600' src='https://github.com/cunningturtle/Portfolio-Sana/blob/main/sketch3.JPEG?raw=true' width='1200'>
+        <figcaption><h2>Desssins expérimentaux</h2><p>Les expressions, et traits dynamiques donnent de la vie à chacun de ses visages.</p></figcaption>
+      </figure>
+    </a>
+    <a class='gallery-link' href='https://github.com/cunningturtle/Portfolio-Sana/blob/main/peinture4.jpg?raw=true'>
+      <figure class='gallery-image'>
+        <img height='1400' src='https://github.com/cunningturtle/Portfolio-Sana/blob/main/peinture4.jpg?raw=true' width='1600'>
+        <figcaption><h2>Femme libre ?</h2><p>Dans Femme libre ?, l’idéal de beauté contraste avec le corps de la femme au premier plan. Son corps est crispé et fermé dans l’ombre. Devant elle, 
+          les dogmes d’une vie heureuse, des représentations de ce à quoi elle aurait dû ressembler pour être une femme libre : richesse, couple, et beauté.</p></figcaption>
+      </figure>
+    </a>
+    <a class='gallery-link' href='https://github.com/cunningturtle/Portfolio-Sana/blob/main/chat3d.png?raw=true'>
+      <figure class='gallery-image'>
+        <img  src='https://github.com/cunningturtle/Portfolio-Sana/blob/main/chat3d.png?raw=true'>
+        <figcaption><h2>Chat modelisé en 3D</h2><p>Ce chat articulé (bones) et expressif a été modelisé à partir de Blender pour mon plaisir personnel. J'en ai fait quelques animation, dont une où il fait coucou de la main.</p></figcaption>
+      </figure>
 
-    .text{flex-direction: column;}
+    </a> <a class='gallery-link' href='https://github.com/cunningturtle/Portfolio-Sana/blob/main/peinturefille.jpg?raw=true'>
+      <figure class='gallery-image'>
+        <img height='1400' src='https://github.com/cunningturtle/Portfolio-Sana/blob/main/peinturefille.jpg?raw=true' width='1200'>
+        <figcaption><h2>Innocence sanglante</h2></figcaption>
+      </figure>
+    </a>
 
-    .zone{ width: 100%; padding : 10px 0px 0px 0px}
-    .illustrations{display: flex;
-        flex-direction: column;
-        align-items: center;}
+    <a class='gallery-link' href='https://github.com/cunningturtle/Portfolio-Sana/blob/main/sketch1.png?raw=true'>
+      <figure class='gallery-image'>
+        <img height='1200' src='https://github.com/cunningturtle/Portfolio-Sana/blob/main/sketch1.png?raw=true' width='1000'>
+        <figcaption><h2>Desssins expérimentaux</h2><p>Dans un but d'explorations des dessins de tatouages.</p></figcaption>
+      </figure>
+    </a>
+    <a class='gallery-link' href='https://github.com/cunningturtle/Portfolio-Sana/blob/main/sketch2.JPEG?raw=true'>
+      <figure class='gallery-image'>
+        <img height='1000' src='https://github.com/cunningturtle/Portfolio-Sana/blob/main/sketch2.JPEG?raw=true' width='1200'>
+        <figcaption><h2>Desssins expérimentaux</h2><p>Dans un but d'explorations des dessins de tatouages.</p></figcaption>
+      </figure>
+    </a>
+    <a class='gallery-link' href='https://github.com/cunningturtle/Portfolio-Sana/blob/main/syntho3d.png?raw=true'>
+      <figure class='gallery-image'>
+        <img src='https://github.com/cunningturtle/Portfolio-Sana/blob/main/syntho3d.png?raw=true'>
+        <figcaption><h2>Synthopolis</h2><p>Dans le cadre d'un projet universitaire, j'ai modelisé et texturé des batiments pour un jeu de course poursuite multijoueur. J'ai aussi dessiné le logo que vous pouvez voir en bas à droite. Il est une fusion des conceps clés du jeu qui sont : la ville (Synthopolis), et le temps (avec la forme en sablier du S).</p></figcaption>
+      </figure>
+    </a>
+    <a class='gallery-link' href='https://github.com/cunningturtle/Portfolio-Sana/blob/main/tigre.jpg?raw=true'>
+      <figure class='gallery-image'>
+        <img height='1400' src='https://github.com/cunningturtle/Portfolio-Sana/blob/main/tigre.jpg?raw=true' width='1000'>
+        <figcaption><h2>Tigre</h2><p>Couverture d'un cahier de note, que j'ai dessiné. J'aime beaucoup les tigres, cela se retrouve dans beaucoup de mes dessins</p></figcaption>
+      </figure>
+    </a>
+  </article>
 
-    .images_illu{display: flex;flex-wrap:wrap}
 
-    .Art{width : 100%;
-        padding: 5% 1% 5% 1%;
-        display: flex}
+  </section>
+</body>
+</html>
+<style>
+	
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    footer{display: flex; flex-direction: column; 
-        align-items: center; 
-        background: #161616; 
-        color: white;}
+/*menu burger */
+body { background: rgb(36, 36, 36);	
+  font-family: "Roboto", sans-serif;
+	background: #121212;
+	color: white;
+	margin: 0;
+	padding: 2rem; }
 
- @media only screen and (max-width: 700px) {      
-     .Art{flex-direction: column;}
-     .Art img {width: 100%}
-     .digit{flex-direction: column}
-     .digit img {width: 100%}
- }
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+
+    input + label {
+      position: fixed;
+      right: 40px;
+      height: 20px;
+      width: 15px; 
+      z-index: 5;
+      span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        margin-top: -1px;
+        left: 0;
+        display: block;
+        background: rgb(36, 36, 36);
+        transition: .5s;
+      }
+      span:first-child {
+        top: 3px; 
+      }
+      span:last-child {
+        top: 16px; 
+      }      
+    }
+    label:hover {
+      cursor: pointer;
+    }
+    input:checked + label { 
+      span {
+        opacity: 0;
+        top: 50%;
+      }
+      span:first-child {
+        opacity: 1;
+        transform: rotate(405deg);
+      }
+      span:last-child {
+        opacity: 1;
+        transform: rotate(-405deg);
+      }
+    }
+    input ~ nav {
+      background: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      z-index: 3;
+      transition: .5s;
+      transition-delay: .5s;
+      overflow: hidden;
+      > ul {
+        text-align: center;
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        right: 20%;
+        > li {
+          opacity: 0;
+          transition: .5s;
+          transition-delay: 0s;
+          > a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgb(36, 36, 36);
+            font-weight: 700;
+            font-family: sans-serif;
+            display: block;
+            padding: 30px;
+          } }}}
+
+
+
+/*titre*/
+.titre {display: flex; flex-direction: column; align-items: center;padding-bottom: 10%;}
+
+main {padding-top: 20%;}
+h1 {font-size :55px; }
+
+
+/*galerie de photos */
+    input:checked ~ nav { 
+      height: 100%;
+      transition-delay: 0s;
+      > ul {
+        > li {
+          opacity: 1;
+          transition-delay: .5s;
+        }
+      }
+    } 
+
+
+h2{font-size: 20px;}
+
+
+.gallery img {
+    width: calc(100% - 2px);
+    margin: 1px;
+    border: 1px solid #57535b;
+}
+
+@media (max-width: 600px) {
+    .gallery img {
+        width: calc(100% - 2px);
+    }
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 900px) {
+    .gallery img {
+        width: calc(100% - 2px);
+    }
+}
+
+.carousel-container {
+	max-width: 900px;
+	margin: auto;
+	position: relative;
+}
+
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.tab {
+	background: #333;
+	border: none;
+	border-radius: 20px;
+	padding: 0.5rem 1rem;
+	color: white;
+	cursor: pointer;
+	font-weight: 500;
+	transition:  0.3s ease;
+}
+
+.tab.active {
+	background: #fff;
+	color: #000;
+}
+
+.carousel-wrapper {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+}
+
+.carousel-track {
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.5s ease-in-out;
+}
+
+.card {
+	flex: 0 0 100%;
+	height: 400px;
+	padding: 1rem 0;
+}
+
+.card-content {
+	border-radius: 16px;
+	height: 368px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+}
+
+.nav-button {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	color: white;
+	font-size: 1.5rem;
+	padding: 0.5rem 1rem;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s;
+	z-index: 10;
+}
+
+.nav-button:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-button.up {
+	top: 0.5rem;
+}
+
+.nav-button.down {
+	bottom: 0.5rem;
+}
+
+
+
+
+/*gallery 2*/
+.gallery2{column-count: 2;}
+.mfp-with-zoom .mfp-title, .touch .gallery-image figcaption, html:not(.touch) .gallery-image figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0);
+    padding: 1em;
+    transition: all 0.2s ease;
+    font-weight: 600;
+    max-width: calc(100% - 9em);
+    line-height: 1.25;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .mfp-with-zoom .mfp-title:before, .touch .gallery-image figcaption:before, html:not(.touch) .gallery-image figcaption:before, .mfp-with-zoom .mfp-title:after, .touch .gallery-image figcaption:after, html:not(.touch) .gallery-image figcaption:after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+  }
+  .mfp-with-zoom .mfp-title:before, .touch .gallery-image figcaption:before, html:not(.touch) .gallery-image figcaption:before, .mfp-with-zoom .mfp-title:after, .touch .gallery-image figcaption:after, html:not(.touch) .gallery-image figcaption:after {
+    right: 100%;
+    bottom: 100%;
+  }
+  .mfp-with-zoom .mfp-title:after, .touch .gallery-image figcaption:after, html:not(.touch) .gallery-image figcaption:after {
+    left: 100%;
+    top: 100%;
+  }
+  
+  .mfp-with-zoom.mfp-ready .mfp-title, .touch .gallery-image figcaption, html:not(.touch) .gallery-image:hover figcaption {
+    color: white;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease 0.3s;
+  }
+  .mfp-with-zoom.mfp-ready .mfp-title:before, .touch .gallery-image figcaption:before, html:not(.touch) .gallery-image:hover figcaption:before, .mfp-with-zoom.mfp-ready .mfp-title:after, .touch .gallery-image figcaption:after, html:not(.touch) .gallery-image:hover figcaption:after {
+    opacity: 1;
+  }
+  .mfp-with-zoom.mfp-ready .mfp-title:before, .touch .gallery-image figcaption:before, html:not(.touch) .gallery-image:hover figcaption:before {
+    right: -1.5em;
+    bottom: -1.5em;
+  }
+  .mfp-with-zoom.mfp-ready .mfp-title:after, .touch .gallery-image figcaption:after, html:not(.touch) .gallery-image:hover figcaption:after {
+    left: -1.5em;
+    top: -1.5em;
+  }
+  
+  html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+  }
+  
+  .gallery {
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  
+  
+  .gallery-image {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .gallery-image:before, .gallery-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 16px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+    will-change: border;
+  }
+  .gallery-image:after {
+    border-width: 0;
+  }
+  .gallery-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  html:not(.touch) .gallery-image {
+    overflow: hidden;
+  }
+  html:not(.touch) .gallery-image:hover:before {
+    border-width: 16px;
+  }
+  html:not(.touch) .gallery-image:hover:after {
+    border-width: 32px;
+  }
+  .touch .gallery-image figcaption {
+    top: auto;
+    bottom: 2em;
+  }
+  
+  .mfp-with-zoom .mfp-container, .mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    transition: all 0.3s ease-out;
+  }
+  .mfp-with-zoom.mfp-bg {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+  }
+  .mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 1;
+  }
+  .mfp-with-zoom.mfp-removing .mfp-container, .mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+  }
+  .mfp-with-zoom img.mfp-img {
+    padding: 0;
+  }
+  .mfp-with-zoom .mfp-figure:after {
+    top: 0;
+    bottom: 0;
+  }
+  .mfp-with-zoom .mfp-container {
+    padding: 0;
+  }
+  .mfp-with-zoom .mfp-content {
+    overflow: hidden;
+  }
+  .mfp-with-zoom .mfp-bottom-bar {
+    top: auto;
+    bottom: 0;
+    margin-top: 0;
+  }
+  .mfp-with-zoom .mfp-title {
+    top: auto;
+    bottom: 2em;
+  }
+  .mfp-arrow {
+    opacity: 1;
+    margin-top: 0 !important;
+    width: 20%;
+    height: 30%;
+    transform: translateY(-50%);
+  }
+  .mfp-arrow:before, .mfp-arrow:after {
+    margin: 0;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(-45deg) translate(-50%, -100%);
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transition: all 0.15s;
+  }
+  .mfp-arrow:active {
+    transform: translateY(-50%) scale(0.95);
+  }
+  
+  .mfp-arrow-left {
+    left: 0;
+  }
+  .mfp-arrow-left:before, .mfp-arrow-left:after {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+  }
+  .mfp-arrow-left:after {
+    margin-left: 2rem;
+  }
+  .mfp-arrow-left:hover:before, .mfp-arrow-left:active:before {
+    margin-left: 2rem;
+  }
+  .mfp-arrow-left:hover:after, .mfp-arrow-left:active:after {
+    margin-left: 0;
+  }
+  
+  .mfp-arrow-right {
+    right: 0;
+  }
+  .mfp-arrow-right:before, .mfp-arrow-right:after {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  .mfp-arrow-right:after {
+    margin-left: 2rem;
+  }
+  .mfp-arrow-right:hover:before {
+    margin-left: 2rem;
+  }
+  .mfp-arrow-right:hover:after {
+    margin-left: 0;
+  }
+  
+  button.mfp-close {
+    opacity: 1;
+    margin-top: 0 !important;
+    width: 20%;
+    height: 30%;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+  }
+  button.mfp-close:before, button.mfp-close:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    opacity: 1;
+    transition: all 0.15s;
+    transform-origin: 0 0;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+  }
+  button.mfp-close:before {
+    transform: rotate(-45deg);
+  }
+  button.mfp-close:after {
+    transform: rotate(135deg);
+  }
+  button.mfp-close:hover:before {
+    transform: rotate(135deg);
+  }
+  button.mfp-close:hover:after {
+    transform: rotate(315deg);
+  }
+  button.mfp-close:active {
+    transform: scale(0.95);
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
 </style>
+
+<script> 
+function toggleMenu() {
+	const navbar = document.getElementById('navbar');
+	navbar.classList.toggle('active');
+}
+ // Ici images du carousel
+ const images = [
+            'https://github.com/cunningturtle/Portfolio-Sana/blob/main/youngart1.png?raw=true', 
+            'https://github.com/cunningturtle/Portfolio-Sana/blob/main/youngartist2.png?raw=true', 
+        ];
+
+        const track = document.getElementById("track");
+        const tabs = document.getElementById("tabs");
+        let activeIndex = 0;
+
+        function createCarousel() {
+            images.forEach((image, index) => {
+                const card = document.createElement("div");
+                card.className = "card";
+                card.innerHTML = `<div class="card-content" style="background: url('${image}') center/cover no-repeat;"></div>`;
+                track.appendChild(card);
+
+                const tab = document.createElement("button");
+                tab.className = "tab";
+                tab.textContent = `${index + 1}`;
+                tab.onclick = () => scrollToCard(index);
+                tabs.appendChild(tab);
+            });
+
+            updateTabs();
+        }
+
+        function scrollToCard(index) {
+            const count = images.length;
+            activeIndex = (index + count) % count;
+            track.style.transform = `translateY(-${activeIndex * 400}px)`;
+            updateTabs();
+        }
+
+        function updateTabs() {
+            [...tabs.children].forEach((tab, i) => {
+                tab.classList.toggle("active", i === activeIndex);
+            });
+        }
+
+        createCarousel();
+
+
+
+        (function() {
+  $('.gallery-link').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: false,
+    mainClass: 'mfp-with-zoom mfp-img-mobile',
+    image: {
+      verticalFit: true,
+      titleSrc: function(item) {
+        return item.el.find('figcaption').text() || item.el.attr('title');
+      }
+    },
+    zoom: {
+      enabled: true
+    },
+    // duration: 300
+    gallery: {
+      enabled: true,
+      navigateByImgClick: false,
+      tCounter: ''
+    },
+    disableOn: function() {
+      return $(window).width() > 640;
+    }
+  });
+
+}).call(this);
+
+
+</script>
