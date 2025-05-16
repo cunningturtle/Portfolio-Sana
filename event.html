@@ -51,7 +51,7 @@
 
 <!--Organisation d'event -->
 <section style ="padding: 5% 10%;">
-  <h2 style="text-align: center; padding-top: 10%">Organisation d’événements</h2>
+  <h2 style="text-align: center;">Organisation d’événements</h2>
   <p style ="text-align:justify">Naga est aussi une association créatrice d’événements, que ce soit pour les étudiants ou pour les enfants des quartiers défavorisés. L’objectif est de donner du dynamisme et un nouveau souffle dans des secteurs où il y a peu d’action, afin de permettre l’accès à la culture pour tous.</p>
 </section>
    
@@ -70,7 +70,7 @@
 </section>
 
 <section class='bateleur'style="display:flex; padding-top: 5%;">
-  <div style="display: flex;">  
+  <div class="batimage" style="display: flex;">  
     <img style='max-width: 300px; height: fit-content; float:left;margin: 1% 1%' src="https://github.com/cunningturtle/Portfolio-Sana/blob/main/soiree.jpg?raw=true" alt="Soirée Bateleur">
   
     <div style='flex-direction: column'>
@@ -303,7 +303,8 @@ h1 {font-size :55px; }
 
 /*section soirée */
 
-@media (max-width: 700px){.bateleur{flex-direction: column;}}
+@media (max-width: 700px){.bateleur{flex-direction: column;}
+			 .batimage{overflow-y: auto; scrollbar-color: #d185df #e0e0e0;}
 
 
 
@@ -407,20 +408,7 @@ h2{font-size: 20px;}
 @media only screen and (max-width: 850px) {.gallery2{column-count: 2;} }
 
 
-.mfp-with-zoom .mfp-title, .touch .gallery-image figcaption, html:not(.touch) .gallery-image figcaption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0);
-    padding: 1em;
-    transition: all 0.2s ease;
-    max-width: calc(100% - 9em);
-    line-height: 1.25;
-    text-align: center;
-    box-sizing: border-box;
-  }
+
   .mfp-with-zoom .mfp-title:before, .touch .gallery-image figcaption:before, html:not(.touch) .gallery-image figcaption:before, .mfp-with-zoom .mfp-title:after, .touch .gallery-image figcaption:after, html:not(.touch) .gallery-image figcaption:after {
     content: "";
     position: absolute;
@@ -475,7 +463,8 @@ h2{font-size: 20px;}
     margin: 0;
     padding: 0;
   }
-  .gallery-image:before, .gallery-image:after {
+  
+  .gallery-image:after {
     content: "";
     position: absolute;
     top: 0;
@@ -656,7 +645,7 @@ h2{font-size: 20px;}
     text-align: center;
     padding: 10%;
     color: white;}
-    
+
 </style>
 
 <script> 
