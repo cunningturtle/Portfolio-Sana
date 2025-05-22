@@ -21,7 +21,7 @@
     <li><a href="index.html">Accueil</a></li>
     <li><a href="Crea.html">Créations artistiques et 3D</a></li>
     <li><a href="DESIGN.html">Design</a></li>
-	  <li><a href="event.html">Evenementiel</a></li>
+	  <li><a href="Event.html">Evenementiel</a></li>
     
   </ul>  
 </nav>
@@ -208,20 +208,192 @@ body { background: rgb(36, 36, 36);
 main {padding-top: 20%;}
 h1 {font-size :55px; }
 
-/*section soirée */
 
-@media (max-width: 700px){.bateleur{flex-direction: column;}
-			 .batimage{overflow-y: auto; scrollbar-color: #d185df #e0e0e0;}}
+/*galerie de photos */
+    input:checked ~ nav { 
+      height: 100%;
+      transition-delay: 0s;
+      > ul {
+        > li {
+          opacity: 1;
+          transition-delay: .5s;
+        }
+      }
+    } 
+
+
+h2{font-size: 20px;}
+
+
+.gallery img {
+    width: calc(100% - 2px);
+    margin: 1px;
+    border: 1px solid #57535b;
+}
+
+@media (max-width: 600px) {
+    .gallery img {
+        width: calc(100% - 2px);
+    }
+}
 
 
 
+
+@media (max-width: 900px) {
+    .gallery img {
+        width: calc(100% - 2px);
+    }
+}
+
+
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.tab {
+	background: #333;
+	border: none;
+	border-radius: 20px;
+	padding: 0.5rem 1rem;
+	color: white;
+	cursor: pointer;
+	font-weight: 500;
+	transition:  0.3s ease;
+}
+
+.tab.active {
+	background: #fff;
+	color: #000;
+}
+
+
+
+.nav-button {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	color: white;
+	font-size: 1.5rem;
+	padding: 0.5rem 1rem;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s;
+	z-index: 10;
+}
+
+.nav-button:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-button.up {
+	top: 0.5rem;
+}
+
+.nav-button.down {
+	bottom: 0.5rem;
+}
+
+
+
+
+/*gallery 2*/
+
+
+  button.mfp-close {
+    opacity: 1;
+    margin-top: 0 !important;
+    width: 20%;
+    height: 30%;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+  }
+  button.mfp-close:before, button.mfp-close:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    opacity: 1;
+    transition: all 0.15s;
+    transform-origin: 0 0;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+  }
+  button.mfp-close:before {
+    transform: rotate(-45deg);
+  }
+  button.mfp-close:after {
+    transform: rotate(135deg);
+  }
+  button.mfp-close:hover:before {
+    transform: rotate(135deg);
+  }
+  button.mfp-close:hover:after {
+    transform: rotate(315deg);
+  }
+  button.mfp-close:active {
+    transform: scale(0.95);
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
 /*footer*/
-  footer{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 10%;
-    color: white;}
-
+  footer{display: flex; flex-direction: column; 
+        text-align: right;
+        background: #161616;
+        padding: 10% 2% 2% 2%;
+        color: white;}
 </style>
+
+<script> 
+function toggleMenu() {
+	const navbar = document.getElementById('navbar');
+	navbar.classList.toggle('active');
+}
+ 
+
+
+        (function() {
+  $('.gallery-link').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: false,
+    mainClass: 'mfp-with-zoom mfp-img-mobile',
+    image: {
+      verticalFit: true,
+      titleSrc: function(item) {
+        return item.el.find('figcaption').text() || item.el.attr('title');
+      }
+    },
+    zoom: {
+      enabled: true
+    },
+    // duration: 300
+    gallery: {
+      enabled: true,
+      navigateByImgClick: false,
+      tCounter: ''
+    },
+    disableOn: function() {
+      return $(window).width() > 640;
+    }
+  });
+
+}).call(this);
+
+
+</script>
