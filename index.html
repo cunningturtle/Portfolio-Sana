@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-		<h1>Portfolio <span>par Ouichsana</span></h1>
+		<p class="surtitre">Portfolio<span>par Ouichsana</span></p>
 		<input id="burger" type="checkbox" />
 
 <label for="burger">
@@ -82,6 +82,23 @@ body {font-family: Arial, sans-serif;
   background: rgb(36, 36, 36);
  
   }
+
+ .surtitre{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 6;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    > span {
+      text-transform: none;
+      opacity: .5;
+      font-weight: 300;
+      font-size: 12px;
+	}
+	
     input + label {
       position: fixed;
       right: 40px;
