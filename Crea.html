@@ -41,18 +41,18 @@
             <div class="carousel-container">
                 <!-- Tabs -->
                 <div class="tabs" id="tabs"></div>
-            
+
                 <!-- Carousel Viewport -->
                 <div class="carousel-wrapper">
                     <button class="nav-button up" onclick="scrollToCard(activeIndex - 1)">&#8593;</button>
                     <button class="nav-button down" onclick="scrollToCard(activeIndex + 1)">&#8595;</button>
-            
+
                     <div class="carousel-track" id="track">
                         <!-- Cards will be inserted dynamically -->
                     </div>
                 </div>
             </div>
-            
+
             <script src="https://cdn.tailwindcss.com"></script>
         </div>
     </main>
@@ -61,14 +61,15 @@
             const navbar = document.getElementById('navbar');
             navbar.classList.toggle('active');
         }
-	
+
     </script>
 
 <!--autre gallery -->
 <h2 style="padding-top: 10%;">Mes créations artistiques</h2>
 <p style=" padding-bottom: 5%">Vous trouverez ici toutes sortes de créations différentes, que cela soit : des illustrations, des peintures, ou des brouillons.</p>
 
- <article class='gallery'>
+<section class="gallery2">
+  <article class='gallery'>
     <a class='gallery-link' href='https://github.com/cunningturtle/Portfolio-Sana/blob/main/peinture3.jpg?raw=true'>
       <figure class='gallery-image'>
         <img height='1400' src='https://github.com/cunningturtle/Portfolio-Sana/blob/main/peinture3.jpg?raw=true' width='1000'>
@@ -168,7 +169,7 @@
 
 
   </section>
-	
+
 <footer>
   <p>2025</p>
   <p>Toutes les photos, illustrations,  peintures, et code html de ce portfolio web sont mes créations</p>
@@ -177,7 +178,7 @@
 </body>
 </html>
 <style>
-	
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -418,7 +419,7 @@ h2{font-size: 20px;}
 
 @media only screen and (max-width: 850px) {.gallery2{column-count: 2;} }
 
-	
+
 .mfp-with-zoom .mfp-title, .touch .gallery-image figcaption, html:not(.touch) .gallery-image figcaption {
     position: absolute;
     top: 50%;
@@ -452,7 +453,7 @@ h2{font-size: 20px;}
     left: 100%;
     top: 100%;
   }
-  
+
   .mfp-with-zoom.mfp-ready .mfp-title, .touch .gallery-image figcaption, html:not(.touch) .gallery-image:hover figcaption {
     color: white;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
@@ -469,19 +470,19 @@ h2{font-size: 20px;}
     left: -1.5em;
     top: -1.5em;
   }
-  
+
   html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizelegibility;
   }
-  
+
   .gallery {
     -moz-column-gap: 0;
          column-gap: 0;
   }
-  
-  
+
+
   .gallery-image {
     position: relative;
     margin: 0;
@@ -519,7 +520,7 @@ h2{font-size: 20px;}
     top: auto;
     bottom: 2em;
   }
-  
+
   .mfp-with-zoom .mfp-container, .mfp-with-zoom.mfp-bg {
     opacity: 0;
     -webkit-backface-visibility: hidden;
@@ -581,7 +582,7 @@ h2{font-size: 20px;}
   .mfp-arrow:active {
     transform: translateY(-50%) scale(0.95);
   }
-  
+
   .mfp-arrow-left {
     left: 0;
   }
@@ -598,7 +599,7 @@ h2{font-size: 20px;}
   .mfp-arrow-left:hover:after, .mfp-arrow-left:active:after {
     margin-left: 0;
   }
-  
+
   .mfp-arrow-right {
     right: 0;
   }
@@ -615,7 +616,7 @@ h2{font-size: 20px;}
   .mfp-arrow-right:hover:after {
     margin-left: 0;
   }
-  
+
   button.mfp-close {
     opacity: 1;
     margin-top: 0 !important;
@@ -655,12 +656,12 @@ h2{font-size: 20px;}
   button.mfp-close:active {
     transform: scale(0.95);
   }
-  
+
   a {
     text-decoration: none;
     color: inherit;
   }
-	
+
 /*footer*/
   footer{display: flex; flex-direction: column; 
         text-align: right;
